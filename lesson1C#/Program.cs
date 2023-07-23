@@ -42,3 +42,18 @@ else
     Console.WriteLine("Max = " + num3);
 }
 */
+
+/*Задача 6: Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).
+
+Console.Write("Input your number: ");
+int num = Convert.ToInt32(Console.ReadLine());
+
+if ( num % 2 == 0 )
+{
+    Console.WriteLine(num);
+}
+else
+{
+    Console.WriteLine("This number is odd");
+}
+*/
