@@ -17,20 +17,21 @@ else
 */
 
 /*Задача 4: Напишите программу, которая принимает на вход три числа и выдаёт максимальное из этих чисел.
-*/
+
 Console.Write("Input first number: ");
-int num1 = Convert.ToInt32(Console.ReadLine);
+int num1 = Convert.ToInt32(Console.ReadLine());
 Console.Write("Input second number: ");
-int num2 = Convert.ToInt32(Console.ReadLine);
+int num2 = Convert.ToInt32(Console.ReadLine());
 Console.Write("Input third number: ");
-int num3 = Convert.ToInt32(Console.ReadLine);
-if (num1 > num2)
+int num3 = Convert.ToInt32(Console.ReadLine());
+int max = num1;
+if ( num1 > num2 )
 {
-    Console.WriteLine("Max = " + num1);
+    max = num1;
 }
 else
 {
-    Console.WriteLine("Max = " + num2);
+    max = num2;
 }
 if (num2 > num3)
 {
@@ -40,3 +41,4 @@ else
 {
     Console.WriteLine("Max = " + num3);
 }
+*/
