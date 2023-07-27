@@ -41,8 +41,8 @@ bool isDividable(int num, int div1, int div2)
     //    return true;
     //else
     //    return false;
-     // *нижняя строка тоже самое что и верхняя*
-    return num % div1 == 0 && num % div2 == 0;       
+        // *нижняя строка тоже самое что и верхняя*
+        return num % div1 == 0 && num % div2 == 0;       
 }
 
 Console.Write("Input a number for cheking: ");
@@ -73,9 +73,20 @@ int number = new Random().Next( 10, 99);
 Console.WriteLine(number);
 int result = MaxNum(number);
 Console.WriteLine(result);
-*/ 
+*/
 
 /* Task 4. Напишите программу, которая принимает на вход два числа и проверяет, 
 является ли одно число квадратом другого.
 */
+bool square (int num1, int num2 );
+{
+    return (num1 == num2*num2 || num2 == num1*num1 );
+}
 
+Console.Write("Input the first number: ");
+int number1 = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input the second number: ");
+int number2 = Convert.ToInt32(Console.ReadLine());
+bool res = square (number1, number2);
+if (res) Console.WriteLine ("Yes");
+else Console.WriteLine("No");
