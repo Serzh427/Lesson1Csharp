@@ -82,7 +82,6 @@ bool square (int num1, int num2 );
 {
     return (num1 == num2*num2 || num2 == num1*num1 );
 }
-
 Console.Write("Input the first number: ");
 int number1 = Convert.ToInt32(Console.ReadLine());
 Console.Write("Input the second number: ");
