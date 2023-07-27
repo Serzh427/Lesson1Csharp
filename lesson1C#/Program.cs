@@ -59,12 +59,14 @@ else
 */
 
 /* Задача 8: Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
-*/
-Console.Write("Input any number: ");
-int num = Convert.ToInt32.(Console.ReadLine());
 
-while ( num % 2 == 0 )
+Console.Write("Input any number: ");
+int num = Convert.ToInt32(Console.ReadLine());
+int current = 2;
+
+while ( current <= num )
 {
-    Console.Write( num + " " )
-    num++;
+    Console.Write( current + " " );
+    current = current + 2;
 }
+*/
