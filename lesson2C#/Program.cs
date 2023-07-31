@@ -60,7 +60,7 @@ else Console.Write("No");
 /* Task 3.  Напишите программу, которая выводит случайное число из отрезка [10, 99] 
 и показывает наибольшую цифру числа.
 
-int MaxNum(int num);
+int MaxNum(int num)
 {
     int hundreds = num % 10;
     int units = num / 10;
@@ -77,8 +77,8 @@ Console.WriteLine(result);
 
 /* Task 4. Напишите программу, которая принимает на вход два числа и проверяет, 
 является ли одно число квадратом другого.
-*/
-bool square (int num1, int num2 );
+
+bool square (int num1, int num2 )
 {
     return (num1 == num2*num2 || num2 == num1*num1 );
 }
@@ -89,3 +89,5 @@ int number2 = Convert.ToInt32(Console.ReadLine());
 bool res = square (number1, number2);
 if (res) Console.WriteLine ("Yes");
 else Console.WriteLine("No");
+
+*/
