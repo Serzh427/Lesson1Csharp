@@ -1,0 +1,15 @@
+F:\GeeakBrains\C#Homework\lesson4C#\bin\Debug\net6.0\lesson4C#.exe
+F:\GeeakBrains\C#Homework\lesson4C#\bin\Debug\net6.0\lesson4C#.deps.json
+F:\GeeakBrains\C#Homework\lesson4C#\bin\Debug\net6.0\lesson4C#.runtimeconfig.json
+F:\GeeakBrains\C#Homework\lesson4C#\bin\Debug\net6.0\lesson4C#.dll
+F:\GeeakBrains\C#Homework\lesson4C#\bin\Debug\net6.0\lesson4C#.pdb
+F:\GeeakBrains\C#Homework\lesson4C#\obj\Debug\net6.0\lesson4C#.csproj.AssemblyReference.cache
+F:\GeeakBrains\C#Homework\lesson4C#\obj\Debug\net6.0\lesson4C#.GeneratedMSBuildEditorConfig.editorconfig
+F:\GeeakBrains\C#Homework\lesson4C#\obj\Debug\net6.0\lesson4C#.AssemblyInfoInputs.cache
+F:\GeeakBrains\C#Homework\lesson4C#\obj\Debug\net6.0\lesson4C#.AssemblyInfo.cs
+F:\GeeakBrains\C#Homework\lesson4C#\obj\Debug\net6.0\lesson4C#.csproj.CoreCompileInputs.cache
+F:\GeeakBrains\C#Homework\lesson4C#\obj\Debug\net6.0\lesson4C#.dll
+F:\GeeakBrains\C#Homework\lesson4C#\obj\Debug\net6.0\refint\lesson4C#.dll
+F:\GeeakBrains\C#Homework\lesson4C#\obj\Debug\net6.0\lesson4C#.pdb
+F:\GeeakBrains\C#Homework\lesson4C#\obj\Debug\net6.0\lesson4C#.genruntimeconfig.cache
+F:\GeeakBrains\C#Homework\lesson4C#\obj\Debug\net6.0\ref\lesson4C#.dll
