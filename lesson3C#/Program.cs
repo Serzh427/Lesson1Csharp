@@ -60,3 +60,26 @@ if ( validDay > 5 && validDay <=7 )
      
     }      
 */
+
+// Homework lesson 3
+
+
+/* Задача 19. Напишите программу, которая принимает на вход пятизначное число и 
+проверяет, является ли оно палиндромом.
+
+
+bool palindrom ( string num )
+{
+    int len = num.Length;
+    for (int i = 0; i < len/2; i++ )
+    {
+        if (num[i] != num [len -i -1])
+        return false;
+    }
+    return true;
+}
+Console.Write("Input your number: ");
+string newN = Console.ReadLine();
+bool result = palindrom(newN);
+Console.Write(result);
+*/
