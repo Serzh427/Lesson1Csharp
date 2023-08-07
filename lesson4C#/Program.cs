@@ -125,3 +125,55 @@ if (error(B))
 Console.WriteLine($"New number is {degree}");
 }
 */
+
+/* Задача 27: Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.
+
+
+int sum ( int num)
+{
+    int result = 0;
+    while (num > 0)
+    {
+        result += num % 10;
+        num = num / 10;
+    }   
+    return result;
+}
+Console.Write("input your number: ");
+int summ = Convert.ToInt32(Console.ReadLine());
+int newNumber = sum(summ);
+Console.WriteLine($"Take your summa {newNumber} if your number is {summ}");
+*/
+
+/* Задача 29: Напишите программу, которая задаёт массив из m элементов и выводит их на экран.
+
+int [] CreateArray (int size, int min, int max)
+{
+    int [] array = new int[size]; // Объявляем массив
+    int i = 0;
+    for (; i < size; i++)
+    {
+        array [i] = random.Next(min, max + 1); // Генерирует случайными числами массив
+    }
+    return array;
+}
+
+void PrintArray ( int[] array )
+{
+    Consol.Write("[");
+    for ( int i = 0; i < array.Length - 1; i++ )
+    {
+        Console.Write($"{array[i]}, ");
+    }
+    Console.Write($"{array[array.Length - 1]}");
+    Console.WriteLine("]");
+}   
+Console.Write("Input a length of an array: ");
+int length = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input a min possible value: ");
+int min = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input a max possible value: ");
+int max = Convert.ToInt32(Console.ReadLine());
+int [] array = GenerateArray(length, min, max);
+
+*/
