@@ -84,3 +84,44 @@ bool result = palindrom(newN);
 Console.Write(result);
 */
 
+/* Задача 23
+Напишите программу, которая принимает на вход число (N) и 
+выдаёт таблицу кубов чисел от 1 до N.
+
+void square (string msg, int N)
+{   for ( int i = 1; i <= N; i++)
+    {
+        Console.WriteLine($"{i}*{i}*{i} = {i*i*i}");
+    }
+    Console.WriteLine();
+}
+Console.Write("input your N: ");
+int newN = Convert.ToInt32(Console.ReadLine());
+square(msg: "", N: newN);
+*/
+
+/* Задача 21
+Напишите программу, которая принимает на вход координаты двух точек и 
+находит расстояние между ними в 3D пространстве.
+
+
+void sqrtXYZ ( int x1, int y1, int z1, int x2, int y2, int z2)
+{
+    Console.WriteLine($"{Math.Sqrt(((x2-x1)*(x2-x1))+((y2-y1)*(y2-y1))+((z2-z1)*(z2-z1)))}");
+}
+
+int text ( string msg)
+{
+    Console.Write(msg);
+    int num = Convert.ToInt32(Console.ReadLine());
+    return num;
+}
+int X1 = text("Input x1: ");
+int X2 = text("Input x2: ");
+int Y1 = text("Input y1: ");
+int Y2 = text("Input y2: ");
+int Z1 = text("Input z1: ");
+int Z2 = text("Input z2: ");
+sqrtXYZ ( X1,  Y1, Z1, X2,Y2, Z2);
+
+*/
