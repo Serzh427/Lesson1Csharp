@@ -90,3 +90,38 @@ int max = Convert.ToInt32(Console.ReadLine());
 int[] myArray = CreateRandomArray(length, min, max);
 WriteArray(myArray);
 */
+
+// Homework
+/* Задача 25: Напишите цикл, который принимает на вход два числа (A и B) и возводит число A в натуральную степень B.
+
+int up_degree ( int a, int b)
+{
+    int result = 1;
+    int i = 0;
+    while ( i < b )
+    {
+    result *= a;
+    i++;
+    }
+    return result;      
+}
+
+bool error (int b)
+{
+    if ( b < 0)
+    {
+        Console.WriteLine("Степень не должна быть меньше нуля");
+        return false;
+    }
+    return true;
+}
+Console.Write("Input a number A: ");
+int A = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input a number B: ");
+int B = Convert.ToInt32(Console.ReadLine());
+int degree = up_degree(A,B);
+if (error(B))
+{
+Console.WriteLine($"New number is {degree}");
+}
+*/
