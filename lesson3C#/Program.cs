@@ -83,3 +83,4 @@ string newN = Console.ReadLine();
 bool result = palindrom(newN);
 Console.Write(result);
 */
+
