@@ -177,3 +177,48 @@ Console.Write("Enter the right border: ");
 int b = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine(ElementQuantity(myArray, a, b));
 */
+
+// Homework
+
+/* Задача 34: Задайте массив заполненный случайными положительными 
+трёхзначными числами. Напишите программу, которая покажет
+ количество чётных чисел в массиве.
+
+
+int [] CreateRandomArray (int size, int minValuem, int maxValue)
+{
+    int [] array = new int [size];
+
+    for (int i = 0; i < size; i++)
+        array[i] = new Random().Next(minValuem,maxValue + 1);
+
+    return array;
+}
+
+void WriteArray(int [] array)
+{
+    for (int i = 0; i < array.Length; i++)
+        Console.Write(array[i] + " ");
+
+    Console.WriteLine();
+}
+
+int countNumbers (int [] array )
+{
+    int count = 0;
+    for ( int i = 0; i < array.Length; i++)
+        if ( array[i] % 2 == 0)
+        count += 1;
+    return count;    
+}
+
+Console.Write("Input a length of array: ");
+int m = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input a min possible value from 100 : ");
+int a = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input a max possible value to 999: ");
+int b = Convert.ToInt32(Console.ReadLine());
+int [] myArray = CreateRandomArray(m,a,b);
+WriteArray(myArray);
+Console.WriteLine(countNumbers(myArray));
+ */
