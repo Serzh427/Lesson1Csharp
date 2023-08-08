@@ -3,9 +3,9 @@
 
 int [] CreateRandomArray (int size, int minValuem, int maxValue)
 {
-    int [] array = new int [size];
+    int [] array = new array.Length;
 
-    for (int i = 0; i < size; i++)
+    for (int i = 0; i < array.Length; i++)
         array[i] = new Random().Next(minValuem,maxValue + 1);
 
     return array;
@@ -267,4 +267,57 @@ Console.WriteLine(summa(myArray));
 
 /* Задача 38: Задайте массив вещественных чисел. Найдите разницу между
 максимальным и минимальным элементов массива.
+
+double [] randomArray (int size, double min, double max)
+{
+    double [] array = new double [size];
+
+    for ( int i = 0; i < size; i++)
+        
+        array[i] = Math.Round((new Random().NextDouble()*(max - min) + min), 2);
+    
+    return array;
+}
+
+void WriteArray(double [] array)
+{
+    for (int i = 0; i < array.Length; i++)
+        Console.Write(array[i] + " ");
+
+    Console.WriteLine();
+}
+
+double minNum (double [] array)
+{
+    double min = 0;
+    for ( int i = 0; i < array.Length; i++)
+        if ( min < array [i])
+        min = array[i];
+    return min;
+}
+
+double maxNum (double [] array)
+{
+    double max = 0;
+    for ( int i = 0; i < array.Length; i++)
+        if ( max > array [i])
+        max = array[i];
+    return max;
+}
+double distance (double [] myArray)
+{
+    return Math.Round(maxNum(myArray)+(minNum(myArray)),2);
+}
+Console.Write("Input a length of array: ");
+int m = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input a min possible value: ");
+double a = Convert.ToDouble(Console.ReadLine());
+Console.Write("Input a max possible value: ");
+double b = Convert.ToDouble(Console.ReadLine());
+
+double [] myArray = randomArray(m,a,b);
+WriteArray(myArray);
+Console.WriteLine("min: " + minNum(myArray));
+Console.WriteLine("max: " + maxNum(myArray) );
+Console.WriteLine("distance: " + distance(myArray));
 */
