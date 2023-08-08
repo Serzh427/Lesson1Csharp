@@ -222,3 +222,49 @@ int [] myArray = CreateRandomArray(m,a,b);
 WriteArray(myArray);
 Console.WriteLine(countNumbers(myArray));
  */
+
+ /* Задача 36: Задайте одномерный массив, заполненный случайными числами. 
+ Найдите сумму элементов, стоящих на нечётных позициях.
+
+int [] randomArray (int size, int min, int max)
+{
+    int [] array = new int [size];
+
+    for ( int i = 0; i < size; i++)
+        array[i] = new Random().Next(min,max+1);
+    
+    return array;
+}
+
+void WriteArray(int [] array)
+{
+    for (int i = 0; i < array.Length; i++)
+        Console.Write(array[i] + " ");
+
+    Console.WriteLine();
+}
+
+int summa (int [] array)
+{
+    int sum = 0;
+    for ( int i = 0; i < array.Length; i++)
+        if ( i % 2 != 0 )
+        sum += array[i];
+    return sum;
+}
+Console.Write("Input a length of array: ");
+int m = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input a min possible value: ");
+int a = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input a max possible value: ");
+int b = Convert.ToInt32(Console.ReadLine());
+
+int[] myArray = randomArray(m,a,b);
+WriteArray(myArray);
+
+Console.WriteLine(summa(myArray));
+*/ 
+
+/* Задача 38: Задайте массив вещественных чисел. Найдите разницу между
+максимальным и минимальным элементов массива.
+*/
