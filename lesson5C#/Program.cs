@@ -267,14 +267,14 @@ Console.WriteLine(summa(myArray));
 
 /* Задача 38: Задайте массив вещественных чисел. Найдите разницу между
 максимальным и минимальным элементов массива.
-
+*/
 double [] randomArray (int size, double min, double max)
 {
     double [] array = new double [size];
 
     for ( int i = 0; i < size; i++)
         
-        array[i] = Math.Round((new Random().NextDouble()*(max - min) + min), 2);
+        array[i] = Math.Round((new Random().NextDouble()*(max - min) + min));
     
     return array;
 }
@@ -320,4 +320,4 @@ WriteArray(myArray);
 Console.WriteLine("min: " + minNum(myArray));
 Console.WriteLine("max: " + maxNum(myArray) );
 Console.WriteLine("distance: " + distance(myArray));
-*/
+
