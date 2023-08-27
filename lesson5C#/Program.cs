@@ -1,9 +1,9 @@
 ﻿/* Задайте массив из m элементов, заполненный случайными числами
  из промежутка [a, b]. Найдите сумму отрицательных элементов массива.
-
+*/
 int [] CreateRandomArray (int size, int minValuem, int maxValue)
 {
-    int [] array = new array.Length;
+    int [] array = new int [size];
 
     for (int i = 0; i < array.Length; i++)
         array[i] = new Random().Next(minValuem,maxValue + 1);
@@ -39,7 +39,7 @@ int b = Convert.ToInt32(Console.ReadLine());
 int[] myArray = CreateRandomArray(m,a,b);
 WriteArray(myArray);
 Console.WriteLine(SumOfNegative(myArray));
-*/
+
 
 /* Напишите программу замена элементов массива: положительные элементы 
 замените на соответствующие отрицательные, и наоборот.
@@ -267,7 +267,7 @@ Console.WriteLine(summa(myArray));
 
 /* Задача 38: Задайте массив вещественных чисел. Найдите разницу между
 максимальным и минимальным элементов массива.
-*/
+
 double [] randomArray (int size, double min, double max)
 {
     double [] array = new double [size];
@@ -320,4 +320,4 @@ WriteArray(myArray);
 Console.WriteLine("min: " + minNum(myArray));
 Console.WriteLine("max: " + maxNum(myArray) );
 Console.WriteLine("distance: " + distance(myArray));
-
+*/
