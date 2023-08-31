@@ -150,3 +150,53 @@ myArray[0] =  0; // проверка, связаны ли два масива
 WriteArray(myArray);
 WriteArray (CopyMyArray);
 */
+
+/* Homework
+Задача 41: Пользователь вводит с клавиатуры M чисел. 
+Посчитайте, сколько чисел больше 0 ввёл пользователь.
+
+int Prompt(string message)
+{
+    System.Console.Write(message);
+    string value = Console.ReadLine();
+    int result = Convert.ToInt32(value);
+    return result;
+}
+
+int [] InputArray (int size)
+{
+    int [] array = new int [size];
+
+    for (int i = 0; i < array.Length; i++)
+        array[i] = Prompt($"Введите {i+1}-й элемент: ");
+
+    return array;
+}
+
+void WriteArray(int [] array)
+{
+    for (int i = 0; i < array.Length; i++)
+        Console.Write($"a{i} = (array{i})");
+
+    Console.WriteLine();
+}
+
+int positive (int [] array)
+{
+    int count = 0;
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (array[i] > 0)
+        {
+            count ++;
+        }
+    }
+    return count;  
+}
+
+int length = Prompt("Input quantity elements");
+int [] array;
+array = InputArray(length);
+WriteArray(array);
+Console.WriteLine($"Кол-во числе больше 0 - (positive(array))");
+*/
