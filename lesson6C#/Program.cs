@@ -200,3 +200,70 @@ array = InputArray(length);
 WriteArray(array);
 Console.WriteLine($"Кол-во числе больше 0 - (positive(array))");
 */
+
+/* Задача 43: Напишите программу, которая найдёт точку пересечения двух прямых, заданных уравнениями 
+y = k1 * x + b1, y = k2 * x + b2; значения b1, k1, b2 и k2 задаются пользователем.
+
+double Prompt(string message)
+{
+    System.Console.Write(message);
+    string value = Console.ReadLine();
+    double result = Convert.ToDouble(value);
+    return result;
+}
+int k = 0;
+int b = 1;
+int LINE1 = 1;
+int LINE2 = 2;
+double [] Array1 = InputArray(LINE1);
+double [] Array2 = InputArray(LINE2);
+int X_COORD = 0;
+int Y_COORD = 1;
+
+double [] InputArray (int LINE)
+{
+    double [] array = new double [2];
+        
+        array[k] = Prompt($"Input k{LINE}: ");
+        array[b] = Prompt($"Input b{LINE}: ");
+        
+
+    return array;
+}
+
+double [] CrossPoint (double [] Array1, double [] Array2)
+{
+    double [] ArrayPoint = new double [2];
+    {
+       ArrayPoint[0] = (Array2[1]-Array1[0])/(Array1[0]-Array2[1]);
+       ArrayPoint[1] = (Array1[0]*Array2[1]-Array1[0]*Array1[1])/(Array1[0]-Array2[1]);
+    }
+    return ArrayPoint;
+}
+
+bool DifferentsSubjects ( double [] Array1, double [] Array2)
+{
+    if ( Array1[0] == Array2[0]  )
+    {
+        if ( Array1[1] == Array2[1] )
+        {
+            Console.WriteLine("Прямые совпадают");
+            return false;
+        }
+        else
+        {
+            Console.WriteLine("Прямые параллельны");
+            return false;
+        }
+    }
+    return true;
+}
+
+if ( DifferentsSubjects (Array1,  Array2))
+{
+    double [] coord = CrossPoint (Array1, Array2);
+    Console.Write($"Точка пересечения уравнений y={Array1[k]}*x+{Array1[b]} и y={Array2[k]}*x+{Array2[b]}");
+    Console.WriteLine($"имеет координаты ({coord[X_COORD]}),({coord[Y_COORD]})");
+    
+}
+*/
