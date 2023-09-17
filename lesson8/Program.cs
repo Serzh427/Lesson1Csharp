@@ -62,3 +62,42 @@ int number = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine(SumDigits(number));
 */
 
+/* Задача 64: Задайте значение N. Напишите программу, которая выведет 
+все натуральные числа в промежутке от N до 1. Выполнить с помощью рекурсии.
+N = 5 -> "5, 4, 3, 2, 1"
+N = 8 -> "8, 7, 6, 5, 4, 3, 2, 1"
+
+string PrintNumer(int num, string res)
+{
+    if (num == 1)
+    {
+    res = res + '1';
+    return res;
+    }
+    else
+    {
+    res = res + num;
+    return PrintNumer(num - 1, res);
+    }
+}
+string result = "";
+
+Console.Write("Input the number: ");
+int number = Convert.ToInt32(Console.ReadLine());
+result = PrintNumer(number, result);
+Console.WriteLine(result);
+*/
+
+/* Задача 66: Задайте значения M и N. Напишите программу, которая найдёт сумму натуральных элементов в промежутке от M до N.
+M = 1; N = 15 -> 120
+M = 4; N = 8. -> 30
+*/
+int PowerAB ( int M, int N)
+{
+    if(M == 0) return (N * (N + 1)) / 2;            
+    else if (N == 0) return (M * (M + 1)) / 2;       
+    else if (M == N) return M;                       
+    else if (M < N) return N + PowerAB(M, N - 1);  
+    else return N + PowerAB(M, N + 1);  
+}
+Console.WriteLine(PowerAB(1,5));
